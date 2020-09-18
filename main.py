@@ -9,7 +9,7 @@ def digit_sum(n):
   elif n<0: 
     return "out of domain."
 
-  return (n % 10 + digit_sum(int(n/10)))
+  return (n % 10 + digit_sum(int(n//10)))
 
 def run(): 
   n=int(input("Enter an int: "))
